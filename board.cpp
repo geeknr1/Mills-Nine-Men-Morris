@@ -49,6 +49,14 @@ void Board::display(){
                 cout << "|  ";
             else if(j == 5 && (i >= 1 && i <= 5))
                 cout << "  |";
+            else if((i == 2 || i == 4) && (j >= 2 && j <= 4))
+                cout << "---";
+            else if((i > 2 && i < 4) && j == 2)
+                cout << "|  ";
+            else if((i > 2 && i < 4) && j == 4)
+                cout << "  |";
+            else if(i == 2 && j == 2)
+                cout << "|--";
             else
                 cout << "   ";
         }
