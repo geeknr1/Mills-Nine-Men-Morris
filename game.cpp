@@ -6,5 +6,7 @@ using namespace std;
 int main(){
     Board board;
     board.display();
+    board.displayWhitePieces();
+    board.displayBlackPieces();
     return 0;
 }

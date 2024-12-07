@@ -19,10 +19,10 @@ void Board::turnLetterToPiece(char c){
     switch (c)
     {
     case 'w':
-        cout << "\u26AA";
+        cout << "\u26AA ";
         break;
     case 'b':
-        cout << "\u26AB";
+        cout << "\u26AB ";
         break;
     default:
         cout << c;
@@ -63,4 +63,28 @@ void Board::display(){
         cout << "|\n";
     }
     displayLetters();
+}
+
+void Board::displayWhitePieces(){
+    cout << endl;
+    cout << "|---------------------------|" << endl;
+    for(int i = 0; i < 11; i++){
+        if(i == 0 || i == 10)
+            cout << "|";
+        else
+            turnLetterToPiece('w');
+    }
+    cout << endl << "|---------------------------|";
+}
+
+void Board::displayBlackPieces(){
+    cout << endl;
+    cout << "|---------------------------|" << endl;
+    for(int i = 0; i < 11; i++){
+        if(i == 0 || i == 10)
+            cout << "|";
+        else
+            turnLetterToPiece('b');
+    }
+    cout << endl << "|---------------------------|";
 }

@@ -13,5 +13,7 @@ class Board{
         void displayLetters();
         void turnLetterToPiece(char);
         void display();
+        void displayWhitePieces();
+        void displayBlackPieces();
 };
 #endif
